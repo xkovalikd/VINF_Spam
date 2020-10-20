@@ -16,8 +16,6 @@ for label in raw_labels:
         mail['Email_number'] = email_num
         mail['Class'] = class_
         x = mail['Email_number']
-        if email_num == 5:
-            break
         
     with open(f'C:/Users/admin/Desktop/ING_1.ročník/ZS_2020-2021/VINF/trec07p/trec07p/data/inmail.{x}', 'rb') as email_file:
         message = email.message_from_binary_file(email_file)
